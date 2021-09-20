@@ -9,7 +9,7 @@ async def start(_, message: Message):
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url=https://t.me/Ethix_Musical_Bot?startgroup=true)
+            InlineKeyboardButton("➕ Add To Your Group ➕", url="https://t.me/Ethix_Musical_Bot?startgroup=true")
             ],[
             InlineKeyboardButton("💬 Support Group", url="https://t.me/SHIZUKA_VC_SUPPORT"),
             InlineKeyboardButton("DEV 🥀", url="https://t.me/pratheek06")
