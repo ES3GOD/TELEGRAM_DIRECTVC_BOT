@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-import config
+from config import BOT_USERNAME
 
 
 @Client.on_message(filters.command(["start", "start@Ethix_Musical_Bot"]) & filters.private & ~filters.channel)
