@@ -2,15 +2,13 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 import config
 
-addbname = 'https://t.me/{}?startgroup=true'.format(Config.BOT_USERNAME[1:])
-
-@Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@Ethix_Musical_Bot"]) & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
         text="**Hello 👋🏻 {}!**\n\nI **Can Play Music In Voice Chats of Telegram Groups.**I Have A **lot of cool feature that will amaze You!**\n\n**Click /cmdlist For More Help On My Usage ❤**".format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("➕ Add To Your Group ➕", url=Ethix_Musical_Bot)
+            InlineKeyboardButton("➕ Add To Your Group ➕", url=https://t.me/Ethix_Musical_Bot?startgroup=true)
             ],[
             InlineKeyboardButton("💬 Support Group", url="https://t.me/SHIZUKA_VC_SUPPORT"),
             InlineKeyboardButton("DEV 🥀", url="https://t.me/pratheek06")
@@ -19,7 +17,7 @@ async def start(_, message: Message):
         disable_web_page_preview=True
     )
         
-@Client.on_message(filters.command(["start", "start@GroupMusicPlayBot"]) & ~filters.private & ~filters.channel)
+@Client.on_message(filters.command(["start", "start@Ethix_Musical_Bot"]) & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
         text="**Music Bot Is Online ✅**",
@@ -31,7 +29,7 @@ async def gstart(_, message: Message):
     )
 
 
-@Client.on_message(filters.command(["cmdlist", "start@GroupMusicPlayBot"]) & filters.private & ~filters.channel)
+@Client.on_message(filters.command(["cmdlist", "start@Ethix_Musical_Bot"]) & filters.private & ~filters.channel)
 async def cmdlist(_, message: Message):
     await message.reply_text(
         text="""**Group Music Bot : Help Menu**
